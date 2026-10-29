@@ -1,0 +1,11 @@
+services:
+  birdnet-digest:
+    build: .
+    container_name: birdnet-digest
+    restart: unless-stopped
+    # Host networking lets the digest reach BirdNET-Go on localhost,
+    # however BirdNET-Go's own container is set up.
+    network_mode: host
+    env_file: .env
+    volumes:
+      - ./out:/out
