@@ -18,8 +18,8 @@ Detections you've marked as false positives are left out. Light and dark mode bo
 ## Install on the Pi
 
 ```sh
-git clone https://github.com/ptpittman/birdnet-digest.git ~/birdnet-digest
-cd ~/birdnet-digest
+git clone https://github.com/ptpittman/birdnet-email.git ~/birdnet-email
+cd ~/birdnet-email
 cp .env.example .env
 nano .env        # Mailgun key, domain, from/to, station name, timezone
 ```
@@ -45,7 +45,7 @@ Then:
 ## Updating
 
 ```sh
-cd ~/birdnet-digest
+cd ~/birdnet-email
 ./run.sh update
 ```
 
